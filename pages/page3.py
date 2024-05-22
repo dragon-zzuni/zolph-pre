@@ -6,6 +6,11 @@ import google.generativeai as genai
 
 genai.configure(api_key="AIzaSyBTUy0-FYt9dofqdTZRY-jtNPuz2WGEm00")
 
+engine = pyttsx3.init()
+engine.setProperty('voice', 'espeak')  # `espeak`를 사용하도록 설정
+engine.setProperty('rate', 150)  # 발음 속도 설정
+engine.setProperty('volume', 1.0)  # 볼륨 설정
+
 generation_config = {
   "temperature": 0.9,
   "top_p": 1,
@@ -95,13 +100,6 @@ def main():
             chatbot_response = get_chatbot_response(user_input)
             st.text(f"AI: {chatbot_response}")
             text_to_speech(chatbot_response)
-
-    # TTS 
-    def text_to_speech(text):
-        engine = pyttsx3.init()
-        engine.say(text)
-        engine.runAndWait()
-    
 
    
 
