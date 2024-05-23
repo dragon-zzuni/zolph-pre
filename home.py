@@ -36,3 +36,4 @@ else:
 st.page_link("home.py", label="홈", icon="🏠")
 st.page_link("pages/page2.py", label="스무고개", icon="✏️")
 st.page_link("pages/page1.py", label="씨앗 키우기", icon="🌱")
+st.page_link('pages/page4.py', label='스무고개 멀티모드', icon='🙌')
