@@ -9,4 +9,4 @@ SpeechRecognition==3.10.3
 datetime
 pyaudio
 tk
-pyparsing
+pyparsing==3.1.1
