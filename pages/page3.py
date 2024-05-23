@@ -6,10 +6,6 @@ import google.generativeai as genai
 
 genai.configure(api_key="AIzaSyBTUy0-FYt9dofqdTZRY-jtNPuz2WGEm00")
 
-engine = pyttsx3.init()
-engine.setProperty('voice', 'espeak')  # `espeak`를 사용하도록 설정
-engine.setProperty('rate', 150)  # 발음 속도 설정
-engine.setProperty('volume', 1.0)  # 볼륨 설정
 
 generation_config = {
   "temperature": 0.9,
@@ -40,6 +36,11 @@ safety_settings = [
 model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
                               safety_settings=safety_settings)
+
+engine = pyttsx3.init()
+engine.setProperty('voice', 'espeak')  # `espeak`를 사용하도록 설정
+engine.setProperty('rate', 150)  # 발음 속도 설정
+engine.setProperty('volume', 1.0)  # 볼륨 설정
 
 def main():
     st.title(" :cat: 스무고개")
