@@ -8,5 +8,5 @@ pyttsx3
 SpeechRecognition==3.10.3
 datetime
 pyaudio
-tkinter
+tk
 pyparsing
