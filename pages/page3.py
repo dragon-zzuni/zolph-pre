@@ -102,5 +102,6 @@ def main():
 if __name__ == "__main__":
     main()
 
+st.page_link("pages/page4.py", label="멀티 모드로 스무고개 하기", icon="🎮")
 st.page_link("home.py", label="메인으로 돌아가기", icon="🏠")
 st.page_link("pages/page1.py", label="씨앗 키우기", icon="🌱")
