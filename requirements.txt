@@ -2,7 +2,6 @@
 # $ conda create --name <env> --file <this file>
 # platform: win-64
 boltons==23.0.0
-brotli-python
 bzip2==1.0.8
 cachetools==5.3.3
 cffi==1.16.0
