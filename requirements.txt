@@ -10,4 +10,3 @@ datetime
 pyaudio
 tk
 pyparsing==3.1.1
-espeak
